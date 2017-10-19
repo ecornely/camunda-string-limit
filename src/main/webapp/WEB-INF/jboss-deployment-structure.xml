@@ -1,0 +1,15 @@
+<jboss-deployment-structure>
+  <deployment>
+    <exclude-subsystems>
+      <subsystem name="resteasy" />
+      <subsystem name="jaxrs" />
+    </exclude-subsystems>
+    <exclusions>
+      <module name="org.jboss.resteasy.resteasy-jackson2-provider"/>
+    </exclusions>
+    <dependencies>
+      <module name="org.camunda.bpm.camunda-engine" />
+      <module name="com.fasterxml.jackson.core.jackson-databind" slot="2.8.8" />
+    </dependencies>
+  </deployment>
+</jboss-deployment-structure>
